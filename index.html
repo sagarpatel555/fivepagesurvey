@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128748858-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-128748858-1');
+        </script>
+        <title>5 page survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.0.54/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.0.54/survey.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
+
+    </head>
+    <body>
+        External navigation:
+        <span id="surveyProgress"></span>
+        <a id="surveyPrev" href="#" onclick="survey.prevPage();">Prev</a>
+        <a id="surveyNext" href="#" onclick="survey.nextPage();">Next</a>
+        <a id="surveyComplete" href="#" onclick="survey.completeLastPage();">Complete</a>
+        <hr/>
+        <div id="surveyElement"></div>
+        <div id="surveyResult"></div>
+
+        <script type="text/javascript" src="./index.js"></script>
+
+    </body>
+</html>
